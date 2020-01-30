@@ -191,8 +191,17 @@ _	line	most
 ∬	intégrale double	none	never
 ∭	intégrale triple	none	never
 ϑ	thêta	none	never
-ϰ  kappa	none	never
-ϖ  pi	none	never
+ϰ	kappa	none	never
+ϖ	pi	none	never
+‖	norm vector	none	never
+≈	approximately equal to	none	never
+≡	is identically equal to	none	never
+⋂	intersection	none	never
+⋃	union	none	never
+⋁	logic or	none	never
+⋀	logic and	none	never
+ϕ	phi	none	never
+ϐ	bêta	none	never
 
 
 # Miscellaneous Technical
