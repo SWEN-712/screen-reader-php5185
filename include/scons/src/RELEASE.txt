@@ -1,0 +1,27 @@
+  A new SCons release, 3.0.4, is now available
+  on the SCons download page:
+
+          http://www.scons.org/download.php
+  Or via pypi:
+          pip install scons
+
+  Here is a summary of the changes since 3.0.3:
+
+  NEW FUNCTIONALITY
+
+    - Added TEMPFILESUFFIX to allow user to specify suffix for tempfiles used for long command lines
+    - Initial support for ARM architectures with Microsoft Visual Studio 2017. You must set TARGET_ARCH
+         to arm or arm64 to enable.
+
+  FIXES
+
+    - Fixed issue detecting installs of Microsoft Visual Studio 2017 as well as Microsoft build tools 2017.
+
+
+git shortlog --no-merges -ns 3.0.3..HEAD
+    17  Daniel
+    10  Mats Wichmann
+     4  Daniel Moody
+     4  William Deegan
+     3  anatoly techtonik
+     1  Tobias Herzog

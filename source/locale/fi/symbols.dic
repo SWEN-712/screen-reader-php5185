@@ -1,0 +1,281 @@
+﻿#locale/fi/symbols.dic
+#A part of NonVisual Desktop Access (NVDA)
+#Copyright (c) 2011-2012 NVDA Contributors
+#This file is covered by the GNU General Public License.
+
+complexSymbols:
+# identifier	regexp
+decimal point	(?<![^\d -])\,(?=\d)
+negative number	(?<!\w)-(?=[$£€¥,]?\d)
+percent	(?<=\d)\ ?\%(?!\w)
+dates	(((0?[1-9]|[12]\d|3[01])[\.](0?[13578]|1[02])[\.]((1[6-9]|[2-9]\d)?\d{2}))|((0?[1-9]|[12]\d|30)[\.](0?[13456789]|1[012])[\.]((1[6-9]|[2-9]\d)?\d{2}))|((0?[1-9]|1\d|2[0-8])[\.]0?2[\.]((1[6-9]|[2-9]\d)?\d{2}))|(29[\.]0?2[\.]((1[6-9]|[2-9]\d)?(0[48]|[2468][048]|[13579][26])|((16|[2468][048]|[3579][26])00)|00)))
+euro	^(0|(([1-9]{1}|[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{2}){1}(\ [0-9]{3}){0,})),(([0-9]{2})|\-\-)([\ ]{1})(€){1}$
+thousands	(^(((\d)|(\d\d)|(\d\d\d))(\xA0|\x20))*((\d)|(\d\d)|(\d\d\d))([,.]\d*)?$)
+
+symbols:
+# identifier	replacement[[	level][	preserve]][	# display name]
+
+# Complex symbols
+. sentence ending	piste	all	always
+! sentence ending	huuto	all	always
+? sentence ending	kysymys	all	always
+... sentence ending	piste piste piste	all	always
+… sentence ending	piste piste piste	all	always
+; phrase ending	puolipiste	most	always
+: phrase ending	kaksoispiste	most	always
+decimal point		none	always
+in-word '	heitto	all	norep
+negative number	miinus	none	norep
+percent	prosenttia	none	norep
+dates	 	all	always
+euro	euroa	all	norep
+thousands	 	all	always
+
+# Whitespace
+\0	tyhjä	char	# nollamerkki
+\t	sisennys
+\n	rivinvaihto	char
+\f	sivunvaihto	none
+\r	rivinvaihto	char
+ 	väli	char
+ 	väli	char	# sitova välilyönti
+
+# Standard punctuation/symbols
+!	huuto	all
+"	lainaus	most	norep
+\#	risu	some
+$	dollari	all	norep
+£	punta	all	norep
+€	euro	all	norep
+%	prosentti	some
+&	et	some
+'	heitto	all
+(	alkusulku	most	always
+)	loppusulku	most	always
+*	tähti	some
++	plus	some
+,	pilkku	all	always
+-	viiva	most
+.	piste	some
+/	kautta	some
+:	kaksoispiste	most
+;	puolipiste	most
+<	pienempi	most
+>	suurempi	most
+=	on yhtä kuin	some
+?	kysymys	all
+@	ät	some
+[	alkuhaka	most
+]	loppuhaka	most
+\\	keno	some
+^	hattu	most
+_	alaviiva	most
+`	gravis	all
+{	alkuaalto	most
+}	loppuaalto	most
+|	pysty	most
+~	aaltoviiva	most
+
+# Other characters
+•	luetelmapallo	some
+…	piste piste piste	all	always
+...	piste piste piste	all	always
+“	käänteinen alkulainaus	most
+”	käänteinen loppulainaus	most
+‘	vasen lainaus	most
+’	oikea lainaus	most
+–	lyhyt ajatusviiva	most	always
+—	pitkä ajatusviiva	most
+­	pehmeä tavuviiva	most
+●	tähti	some
+¨	treema	most
+‎	nuoli vasemmalta oikealle	char
+‏	nuoli oikealta vasemmalle	char
+‑	sitova viiva	most
+←	nuoli vasemmalle	some
+↑	nuoli ylös	some
+→	nuoli oikealle	some
+↓	nuoli alas	some
+−	miinus	some
+►	musta osoitin oikealle	most
+♥	hertta	most
+♡	valkoinen hertta	most
+♧	valkoinen risti	most
+♢	valkoinen ruutu	most
+○	valkoinen ympyrä	most
+♤	valkoinen pata	most
+☆	valkoinen tähti	most
+♠	musta pata	most
+★	musta tähti	most
+▪	pieni musta neliö	some
+◾	musta neliö	some
+◦	valkoinen luettelomerkki	some
+■	musta neliö	most
+⇒	kaksoisnuoli oikealle	some
+⇨	valkoinen nuoli oikealle	some
+➢	nuolenpää oikealle	some
+⮚	nuolenpää oikealle	some
+❖	musta ruutu miinus valkoinen X	some
+♣	musta risti	some
+♦	musta ruutu	some
+¡	käänteinen huuto	most
+¦	katkopystyviiva	most
+ª	feminiinisen järjestysluvun merkki	most
+º	maskuliinisen järjestysluvun merkki	most
+¹	potenssiin 1	some	# yläindeksi 1
+²	potenssiin 2	some	# yläindeksi 2
+³	potenssiin 3	some	# yläindeksi 3
+´	akuutti	most
+·	rivinkeskinen piste	most
+¸	sedilji	most
+‣	kolmikulmainen luettelomerkki	most
+«	vasen kulmalainaus
+»	oikea kulmalainaus
+µ	mikro	some
+¿	käänteinen kysymys	most
+†	risti	most
+‡	kaksoisristi	most
+☼	säteilevä aurinko	most
+˜	pieni aaltoviiva	most
+‰	promille	most
+§	pykälä	some
+¶	kappale	most
+¯	pituusmerkki	most
+÷	jaettuna	some
+×	kertaa	some
+✓	valintamerkki	most
+✔	valintamerkki	most
+🡺	nuoli oikealle	some
+°	aste	some
+¢	sentti	all	norep
+¤	valuuttamerkki	some
+≠	eri suuri kuin	some
+½	puolikas	some
+¾	kolme neljäsosaa	some
+¼	neljäsosa	some
+¬	negaatio	some
+±	plus miinus	some
+₨	rupia	some
+₹	rupia	some
+™	tavaramerkki	most
+®	rekisteröity tavaramerkki	most
+©	copyright	some
+¥	jeni	all	norep
+Α	iso alfa	some
+Β	iso beeta	some
+Γ	iso gamma	some
+Δ	iso delta	some
+Ε	iso epsilon	most
+Ζ	iso tseeta	most
+Η	iso eeta	most
+Θ	iso theeta	most
+Ι	iso joota	most
+Κ	iso kappa	most
+Λ	iso lambda	most
+Μ	iso myy	most
+Ν	iso nyy	most
+Ξ	iso ksii	most
+Ο	iso omikron	most
+Π	iso pii	most
+Ρ	iso roo	most
+Σ	iso sigma	most
+Τ	iso tau	most
+Υ	iso ypsilon	most
+Φ	iso fii	most
+Χ	iso kii	most
+Ψ	iso psii	most
+Ω	iso omega	most
+α	alfa	some
+β	beeta	some
+γ	gamma	some
+δ	delta	some
+ε	epsilon	most
+ζ	tseeta	most
+η	eeta	most
+θ	theeta	most
+ι	joota	most
+κ	kappa	most
+λ	lambda	most
+μ	myy	most
+ν	nyy	most
+ξ	ksii	most
+ο	omikron	most
+π	pii	most
+ρ	roo	most
+ς	loppu sigma	most
+σ	sigma	most
+τ	tau	most
+υ	ypsilon	most
+φ	fii	most
+χ	kii	most
+ψ	psii	most
+ω	omega	most
+☺	valkoiset hymyilevät kasvot	most
+☂	sateenvarjo	most
+♩	neljäsosanuotti	most
+♪	kahdeksasosanuotti	most
+♫	varrellinen kahdeksasosanuotti	most
+
+# Mathematical Operators U+2200 to U+220F
+∀	kaikilla	none
+∁	komplementti	none
+∂	osittaisderivaatta	none
+∃	on olemassa	none
+∄	ei ole olemassa	none
+∅	tyhjä joukko	none
+∆	lisäys	none
+∇	nabla	none
+∈	kuuluu joukkoon	none
+∉	ei kuulu joukkoon	none
+∊	pieni osa	none
+∋	sisältää jäsenenä	none
+∌	ei sisällä jäsenenä	none
+∍	pieni sisältää jäsenenä	none
+∎	todistuksen loppu	none
+∏	tulo yli	none
+ 
+# Miscellaneous Mathematical Operators
+∑	summa yli	none
+√	neliöjuuri	none
+∛	kuutiojuuri	none
+∜	neljäs juuri	none
+∝	on verrannollinen	none
+∞	ääretön	none
+∟	loppukulma	none
++∠	kulma	none
+∥	samansuuntainen kuin	none
+∦	erisuuntainen kuin	none
+∧	looginen konjuktio	none
+∨	looginen disjunktio	none
+∩	leikkaa	none
+∪	joukko-opillinen yhdiste	none
+∫	määräämätön integraali	none
+∴	siksi	none
+∵	koska	none
+∶	kerroin	none
+∷	verranto	none
+≤	pienempi tai yhtäsuuri kuin	none
+≥	suurempi tai yhtäsuuri kuin	none
+⊂	on osajoukko	none
+⊃	implikaatio	none
+⊆	on alijoukko tai yhtäsuuri kuin	none
+⊇	on ylijoukko tai yhtäsuuri kuin	none
+
+# Vulgur Fractions U+2150 to U+215E
+⅐	seitsemäsosa	none
+⅑	yhdeksäsosa	none
+⅒	kymmenesosa	none
+⅓	kolmasosa	none
+⅔	kaksi kolmasosaa	none
+⅕	viidesosa	none
+⅖	kaksi viidesosaa	none
+⅗	kolme viidesosaa	none
+⅘	neljä viidesosaa	none
+⅙	kuudesosa	none
+⅚	viisi kuudesosaa	none
+⅛	kahdeksasosa	none
+⅜	kolme kahdeksasosaa	none
+⅝	viisi kahdeksasosaa	none
+⅞	seitsemän kahdeksasosaa	none
+# Miscellaneous Technical
+⌘	Macin komentonäppäin	none

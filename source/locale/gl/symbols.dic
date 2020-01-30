@@ -1,0 +1,199 @@
+﻿#locale/gl/symbols.dic
+#A part of NonVisual Desktop Access (NVDA)
+#Copyright (c) 2011-2012 contributors.
+#This file is covered by the GNU General Public License.
+
+complexSymbols:
+# identifier	regexp
+# Sentence endings.
+. sentence ending	(?<=[^\s.])\.(?=[\"'”’)\s]|$)
+! sentence ending	(?<=[^\s!])\!(?=[\"'”’)\s]|$)
+? sentence ending	(?<=[^\s?])\?(?=[\"'”’)\s]|$)
+... sentence ending	(?<=[^\s.])(\s\.|\.)\.\.(?=[\"'”’)\s]|$)
+… sentence ending	(?<=[^\s.])\…(?=[\"'”’)\s]|$)
+# Phrase endings.
+; phrase ending	(?<=[^\s;]);(?=\s|$)
+: phrase ending	(?<=[^\s:]):(?=\s|$)
+
+# Others
+decimal point	(?<![^\d -])\.(?=\d)
+in-word -	(?<=[^\W_])[-]
+negative number	(?<!\w)-(?=[$£€¥.]?\d)
+dates /	((?<=\b\d\d)\/(?=\d\d/(\d{2}|\d{4})\b))|((?<=\b\d\d/\d\d)\/(?=(\d{2}|\d{4})\b))
+
+symbols:
+# identifier	replacement[[	level][	preserve]][	# display name]
+
+# Complex symbols
+. sentence ending	ponto	all	always
+! sentence ending	pechar admiración	all	always
+? sentence ending	pechar interrogación	all	always
+... sentence ending	elipse	all	always	
+… sentence ending	elipse	all	always	
+; phrase ending	ponto e coma	most	always
+: phrase ending	dous pontos	most	always
+decimal point		none	always
+in-word '	apóstrofo	all	norep
+in-word -	guión	all	norep
+negative number	menos	none	norep
+dates /	 	all	always
+
+# Whitespace
+\0	en branco	char
+\t	tab
+\n	liña nova	char
+\f	Salto de páxina	none
+\r	retorno de carro	char
+ 	espazo	char
+ 	espazo	char	# no-break space
+
+# Standard punctuation/symbols
+!	pechar admiración	all
+"	comiñas	most
+\#	signo de número	some
+$	dólar	all	norep
+£	libras	all	norep
+€	euros	all	norep
+¢	Centavos	all	norep
+¥	Yen	all	norep
+₹	Rupia	some	norep
+%	porcento	some
+&	et	some
+'	apóstrofo	all
+(	abrir paréntese	most	always
+)	pechar paréntese	most	always
+*	asterisco	some
++	máis	some
+,	coma	all	always
+-	guión	most
+.	ponto	some
+/	barra 	some
+:	dous pontos	most	norep
+;	ponto e coma	most
+<	menor que	some
+>	maior que	some
+=	igual	some
+?	pechar interrogación	all
+@	arroba	some
+[	abrir corchete	most
+]	pechar corchete	most
+\\	barra invertida	most
+^	circunfrexo	most
+_	subliñado	most
+`	grave	most
+{	abrir chave	most
+}	pechar chave	most
+|	barra vertical	most
+~	tilda	most
+¿	abrir interrogación	all
+¡	abrir admiración	all
+
+# Other characters
+•	viñeta	some
+…	elipse	all	always
+...	elipse	all	always
+“	abrir comiñas	most
+”	pechar comiñas	most
+‘	apóstrofo	most
+’	apóstrofo	most
+–	guión	most	always
+—	raia	most
+●	círculo	most
+¨	diérese	most
+‎	marca de esquerda a dereita	char
+‏	marca de dereita a esquerda	char
+■	Barra vertical cortada	some
+▪	Barra vertical cortada	some
+◾	Barra vertical cortada	some
+◦	Viñeta branca	some
+⇒	frecha dobre á dereita	some
+⇨	frecha branca á dereita	some
+➢	frecha con cabeza á dereita	some
+⮚	frecha con cabeza á dereita	some
+❖	diamante negro menos X branca	some
+♣	clube negro	some
+♦	diamante negro	some
+§	Sección	most
+°	grados	some
+«	Abrir Comiñas angulares
+»	pechar comiñas angulares
+µ	mu	some
+¹	1 sobreescrito	some
+²	2 sobreescrito	some
+³	3 Sobreescrito 3	some
+®	rexistrado	some
+™	Marca rexistrada	some
+©	copyright	some	norep
+±	Máis ou menos	some
+×	multiplicado por	some
+÷	dividido por	some
+←	Frecha esquerda	some
+↑	Frecha arriba	some
+→	Frecha dereita	some
+↓	frecha abaixo	some
+✓	marcado	some
+✔	marcado	some
+🡺	Frecha dereita	some
+
+#Mathematical Operators U+2200 to U+220F
+∀	Por Todos 	none
+∁	Complemento	none
+∂	Derivativa Parcial	none
+∃	Existe	none
+∄	Non Existe	none
+∅	Conxunto Valdeiro	none
+∆	INCREMENTO	none
+∇	NABLA	none
+∈	Pertence a	none
+∉	Non Pertence a	none
+∊	Elemento pequeno de	none
+∋	Contén como Membro a	none
+∌	Non contén como Membro a	none
+∍	Contén como Membro Pequeno a	none
+∎	Fin de Proba	none
+∏	N-Produto Aritmético	none
+# Miscellaneous Mathematical Operators
+∑	N-Suma Aritmética	none
+√	Raíz Cadrada	none
+∛	Raíz Cúbica	none
+∜	Raíz Cuadrática	none
+∝	Proporcioal a	none
+∞	Infinito	none
+∟	Ángulo Dereito	none
+∠	Ángulo	none
+∥	Paralelo A	none
+∦	Non Paralelo A	none
+∧	E Lóxico	none
+∨	Ou Lóxico	none
+∩	Intersección	none
+∪	Unión	none
+∫	Integral	none
+∴	Por Tanto	none
+∵	Porrque	none
+∶	RATIO	none
+∷	Proporción	none
+≤	Menor ou Igual a	none
+≥	Maior ou Igual A	none
+⊂	Subconxunto De	none
+⊃	Superconxunto de 	none
+⊆	Subconxunto de Ou Igual A	none
+⊇	Superconxunto de Ou Igual A	none
+# Vulgur Fractions U+2150 to U+215E
+⅐	un sétimo	none
+⅑	un noveno	none
+⅒	un décimo	none
+⅓	un tercio	none
+⅔	dos tercios	none
+⅕	un quinto	none
+⅖	dous quintos	none
+⅗	tres quintos	none
+⅘	catro quintos	none
+⅙	un sexto	none
+⅚	cinco sextos	none
+⅛	un octavo	none
+⅜	tres octavos	none
+⅝	cinco octavos	none
+⅞	sete octavos	none
+
+# Miscellaneous Technical
+⌘	Tecla Command do Mac	none

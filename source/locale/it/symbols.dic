@@ -1,0 +1,196 @@
+﻿#locale/it/symbols.dic
+#A part of NonVisual Desktop Access (NVDA)
+#Copyright (c) 2011-2017 NVDA contributors.
+#This file is covered by the GNU General Public License.
+
+complexSymbols:
+# identifier	regexp
+# Sentence endings.
+. sentence ending	(?<=[^\s.])\.(?=[\"'”’)\s\],;:»]|$)
+! sentence ending	(?<=[^\s!])\!(?=[\"'”’)\s\]!,;:»\.!]|$)
+? sentence ending	(?<=[^\s?])\?(?=[\"'”’)\s\]\?,;:»\.!]|$)
+# Phrase endings.
+; phrase ending	(?<=[^\s;]);(?=\s|$)
+: phrase ending	(?<=[^\s:]):(?=\s|$)
+# Others
+decimal point	(?<![^\d -])\.(?=\d)
+in-word '	(?<=[^\W_])['’]
+negative number	(?<!\w)-(?=[$£€¥.]?\d)
+
+symbols:
+# identifier	replacement[[	level][	preserve]][	# display name]
+
+# Complex symbols
+. sentence ending	punto	most	always
+! sentence ending	punto esclamativo	all	always
+? sentence ending	punto di domanda	all	always
+; phrase ending	punto e virgola	most	always
+: phrase ending	due punti	most	always
+decimal point		none	always
+in-word '	apostrofo	all	norep
+negative number	meno	none	norep
+
+# Whitespace
+\0	vuoto	char	# null
+\t	tab
+\n	nuova riga	char
+\f	fine pagina	none
+\r	ritorno a capo	char
+ 	spazio	char
+ 	spazio	char	# no-break space
+#\\_	\_	some	always	#Per tags Loquendo
+
+# Standard punctuation/symbols
+!	punto esclamativo	all
+"	virgolette	most
+\#	cancelletto	some
+$	dollari	all	norep
+£	lire sterline	all	norep
+€	euro	all	norep
+¢	Cents	all	norep
+¥	Yen	all	norep
+₹	Rupia	some	norep
+%	percento	some	norep
+&	and	some	norep
+'	apostrofo	all
+(	aperta parentesi	most
+)	chiusa parentesi	most
+*	asterisco	some	norep
++	più	some	norep	always
+,	virgola	all	always
+-	trattino	most
+.	punto	some
+/	barra	some
+:	due punti	most	norep
+;	punto e virgola	most
+<	minore di	most
+>	maggiore di	most
+=	uguale	some	norep
+?	punto di domanda	all
+@	chiocciola	some
+[	aperta quadra	most
+]	chiusa quadra	most
+#\\_	\_	some	always	#Per tags Loquendo
+\\	controbarra	most
+^	accento circonflesso	most
+_	sottolineato	most
+`	accento grave	most
+{	aperta graffa	most
+}	chiusa graffa	most
+|	barra verticale	most
+~	tilde	most
+
+# Other characters
+•	puntato	some
+…	punto punto punto	all	always
+...	punto punto punto	all	always
+“	aperte virgolette	most
+”	chiuse virgolette	most
+‘	aperto apostrofo	most
+’	chiuso apostrofo	most
+–	trattino	most
+—	trattino lungo	most
+●	puntato	most
+¨	dieresi	most
+‎	marcatore da sinistra a destra	char
+‏	marcatore da destra a sinistra	char
+	puntato	some
+■	puntato	some
+▪	puntato	some
+◾	puntato	some
+◦	puntato	some
+§	paragrafo	all
+⇒	doppia freccia a destra	some
+⇨	freccia a destra bianca	some
+➢	punta di freccia a destra	some
+❖	puntato	some
+♣	puntato	some
+♦	puntato	some
+§	section	all
+°	gradi	all	always	#per Loquendo
+«	aperte doppie virgolette
+»	chiuse doppie virgolette
+µ	micro	some
+¹	1 apice	some
+²	2 apice	some
+³	3 apice	some
+®	registered	some
+™	Trademark	some
+©	Copyright	some
+±	Più o Meno	most
+×	per	most
+÷	diviso per	most
+←	freccia sinistra	some
+↑	freccia su	some
+→	freccia destra	some
+↓	freccia giù	some
+✓	segno di spunta	some
+✔	segno di spunta	some
+🡺	freccia destra	some
+
+#Mathematical Operators U+2200 to U+220F
+∀	per ogni 	none
+∁	Complemento	none
+∂	derivata parziale	none
+∃	esiste	none
+∄	non esiste	none
+∅	Insieme Vuoto	none
+∆	incremento	none
+∇	nabla	none
+∈	appartenente a	none
+∉	non appartiene	none
+∊	piccolo simbolo di appartenenza	none
+∋	contiene come membro	none
+∌	non contiene come membro	none
+∍	piccolo contiene come membro	none
+∎	fine della dimostrazione	none
+∏	prodotto n-ario	none
+
+# Miscellaneous Mathematical Operators
+∑	sommatoria n-aria	none
+√	radice quadrata	none
+∛	RADICE CUBICA	none
+∜	RADICE QUARTA	none
+∝	PROPORZIONALE A	none
+∞	INFINITO	none
+∟	ANGOLO RETTO	none
+∠	ANGOLO	none
+∥	PARALLELO A	none
+∦	NON PARALLELO A	none
+∧	AND LOGICO	none
+∨	OR LOGICO	none
+∩	INTERSEZIONE	none
+∪	UNIONE	none
+∫	INTEGRALE	none
+∴	IMPLICA	none
+∵	perché	none
+∶	STA A	none
+∷	PROPORZIONE	none
+≤	MINORE O UGUALE di	none
+≥	MAGGIORE O UGUALE di	none
+⊂	Sottoinsieme di	none
+⊃	sovrainsieme di	none
+⊆	Contenuto o uguale a	none
+⊇	sovrainsieme di o uguale a	none
+¬	not	none
+⟺	se e solo se	some
+
+# Vulgur Fractions U+2150 to U+215E
+⅐	un settimo	none
+⅑	un nono	none
+⅒	un decimo	none
+⅓	un terzo	none
+⅔	due terzi	none
+⅕	un quinto	none
+⅖	due quinti	none
+⅗	tre quinti	none
+⅘	quattro quinti	none
+⅙	un sesto	none
+⅚	cinque sesti	none
+⅛	un ottavo	none
+⅜	tre ottavi	none
+⅝	cinque ottavi	none
+⅞	sette ottavi	none
+
+# Miscellaneous Technical
+⌘	tasto Command Mac	none
