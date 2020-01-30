@@ -96,7 +96,8 @@ _	line	most
 ▪	black square	some
 ◾	black square	some
 ◦	white bullet	some
-⇒	right double arrow	some
+#⇒	right double arrow	some
+⇒	implies	some
 ⇨	right white arrow	some
 ➢	right arrowhead	some
 ⮚	right arrowhead	some
