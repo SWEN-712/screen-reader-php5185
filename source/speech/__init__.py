@@ -630,7 +630,6 @@ def speak(  # noqa: C901
 	#Filter out redundant LangChangeCommand objects 
 	#And also fill in default values
 	autoLanguageSwitching=config.conf['speech']['autoLanguageSwitching']
-	#autoLanguageSwitching = False ##delete!!!!!!!!!
 	autoDialectSwitching=config.conf['speech']['autoDialectSwitching']
 	curLanguage=defaultLanguage=getCurrentLanguage()
 	prevLanguage=None
@@ -641,21 +640,15 @@ def speak(  # noqa: C901
 		if isinstance(item,LangChangeCommand):
 			if not autoLanguageSwitching: continue
 			curLanguage=item.lang
-			#speechSequence.append("foreign")#does nothing
 			if not curLanguage or (not autoDialectSwitching and curLanguage.split('_')[0]==defaultLanguageRoot):
 				curLanguage=defaultLanguage
 		elif isinstance(item,str):
 			if not item: continue
 			if autoLanguageSwitching and curLanguage!=prevLanguage:
-				#speechSequence.append("foreign") ## lo dice delante de todas las oraciones
 				speechSequence.append(LangChangeCommand(curLanguage))
 				prevLanguage=curLanguage
 			speechSequence.append(item)
-			#speechSequence.append("foreign")  ########3########3
 		else:
-			############
-			#change = "foreign " + item
-			#speechSequence.append("foreign")  ########3########3 does nothing
 			speechSequence.append(item)
 	if not speechSequence:
 		# After normalisation, the sequence is empty.

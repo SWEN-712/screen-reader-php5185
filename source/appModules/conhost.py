@@ -13,6 +13,4 @@ class AppModule(appModuleHandler.AppModule):
         pyautogui.hotkey('ctrl', 'c')
         text = pyperclip.paste()
         print(text)
-
-
         nextHandler()
