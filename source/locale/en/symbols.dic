@@ -187,5 +187,13 @@ _	line	most
 ⅝	five eighths	none
 ⅞	seven eighths	none
 
+#project: Greek letters and Math symbols
+∬	intégrale double	none	never
+∭	intégrale triple	none	never
+ϑ	thêta	none	never
+ϰ  kappa	none	never
+ϖ  pi	none	never
+
+
 # Miscellaneous Technical
 ⌘	Mac Command key	none
